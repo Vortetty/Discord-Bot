@@ -39,4 +39,4 @@ from subprocess import check_output
 while wifi_ip == None:
     wifi_ip = check_output(['hostname', '-I'])
     if wifi_ip is not None:
-        client.run('NjgyMDMyNzI3NDE1MTkzNjMw.XlaJ_g.cDZ9qDwS1tKOSRY0ryr6MgA9WgY')
+        client.run('put your bot id here')
