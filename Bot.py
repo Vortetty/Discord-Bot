@@ -50,6 +50,7 @@ async def on_message(message):
             subprocess.call('curl -s https://api.github.com/repos/anuken/mindustry/releases/latest | grep "browser_download_url.*server-release.jar" | cut -d : -f 2,3 | tr -d \" | wget -qi -', shell=True)
 
 
+# ony start the bot once you have wifi, on windows disable the wifi check as windows has not way to check wifi that i have found.
 from subprocess import check_output
 while wifi_ip == None:
     wifi_ip = check_output(['hostname', '-I'])
